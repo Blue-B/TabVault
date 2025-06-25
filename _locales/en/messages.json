@@ -1,0 +1,380 @@
+{
+  "appName": {
+    "message": "TabVault - Secure Tab Manager"
+  },
+  "appDescription": {
+    "message": "Automatically save and restore browser sessions with cross-device synchronization. Secure, encrypted storage with GitHub Gist sync."
+  },
+  "subtitle": {
+    "message": "Tab Restorer"
+  },
+  "checking": {
+    "message": "Checking..."
+  },
+  "settings": {
+    "message": "Settings"
+  },
+  "logout": {
+    "message": "Logout"
+  },
+  "currentStatus": {
+    "message": "Current Status"
+  },
+  "openTabs": {
+    "message": "Open Tabs"
+  },
+  "openWindows": {
+    "message": "Open Windows"
+  },
+  "lastSaved": {
+    "message": "Last Saved"
+  },
+  "none": {
+    "message": "None"
+  },
+  "manualSave": {
+    "message": "Manual Save"
+  },
+  "saveAllOpenTabs": {
+    "message": "Save all currently open tabs"
+  },
+  "saveNow": {
+    "message": "Save Now"
+  },
+  "checkAutoSave": {
+    "message": "Check Auto Save"
+  },
+  "savedSessions": {
+    "message": "Saved Sessions"
+  },
+  "selectAll": {
+    "message": "Select All"
+  },
+  "deleteSelected": {
+    "message": "Delete Selected"
+  },
+  "deleteAll": {
+    "message": "Delete All"
+  },
+  "loading": {
+    "message": "Loading..."
+  },
+  "close": {
+    "message": "Close"
+  },
+  "sessionDetails": {
+    "message": "Session Details"
+  },
+  "savedAt": {
+    "message": "Saved at"
+  },
+  "totalTabs": {
+    "message": "Total Tabs"
+  },
+  "totalWindows": {
+    "message": "Total Windows"
+  },
+  "restoreSelected": {
+    "message": "Restore Selected"
+  },
+  "restoreSession": {
+    "message": "Restore Session"
+  },
+  "deleteSession": {
+    "message": "Delete Session"
+  },
+  "tabFiltering": {
+    "message": "Tab Filtering"
+  },
+  "searchByUrlOrTitle": {
+    "message": "Search by URL or title..."
+  },
+  "processing": {
+    "message": "Processing..."
+  },
+  "autoSaveSettings": {
+    "message": "Auto Save Settings"
+  },
+  "autoSaveInterval": {
+    "message": "Auto Save Interval:"
+  },
+  "enableAutoSave": {
+    "message": "Enable Auto Save"
+  },
+  "minute": {
+    "message": "minute"
+  },
+  "minutes": {
+    "message": "minutes"
+  },
+  "hour": {
+    "message": "hour"
+  },
+  "githubGistSettings": {
+    "message": "GitHub Gist Settings"
+  },
+  "githubTokenSetup": {
+    "message": "GitHub Personal Access Token Setup"
+  },
+  "githubTokenDescription": {
+    "message": "To restore tabs on other computers, set up GitHub Gist."
+  },
+  "tokenCreationSteps": {
+    "message": "Token Creation Steps:"
+  },
+  "githubToken": {
+    "message": "GitHub Personal Access Token:"
+  },
+  "saveToken": {
+    "message": "Save Token"
+  },
+  "testConnection": {
+    "message": "Test Connection"
+  },
+  "storageLocation": {
+    "message": "Storage Location"
+  },
+  "localStorage": {
+    "message": "Local Storage"
+  },
+  "sync": {
+    "message": "Sync"
+  },
+  "encryption": {
+    "message": "Encryption"
+  },
+  "githubGistStatus": {
+    "message": "GitHub Gist Status"
+  },
+  "checkingConnection": {
+    "message": "Checking GitHub Gist connection..."
+  },
+  "encryptionSettings": {
+    "message": "Encryption Settings"
+  },
+  "dataEncryption": {
+    "message": "Data Encryption"
+  },
+  "encryptionDescription": {
+    "message": "Data stored in GitHub Gist is automatically encrypted."
+  },
+  "encryptionMethod": {
+    "message": "Encryption Method:"
+  },
+  "customEncryptionKey": {
+    "message": "Custom Encryption Key (Optional):"
+  },
+  "saveEncryptionKey": {
+    "message": "Save Encryption Key"
+  },
+  "resetToDefault": {
+    "message": "Reset to Default"
+  },
+  "saveSettings": {
+    "message": "Save Settings"
+  },
+  "language": {
+    "message": "Language"
+  },
+  "english": {
+    "message": "English"
+  },
+  "korean": {
+    "message": "한국어"
+  },
+  "initializationError": {
+    "message": "Initialization error occurred"
+  },
+  "autoSaveEnabled": {
+    "message": "Auto save enabled ($1 minute interval) - Restart completed"
+  },
+  "autoSaveDisabled": {
+    "message": "Auto save is disabled"
+  },
+  "autoSaveCheckError": {
+    "message": "Error checking auto save status"
+  },
+  "customKey": {
+    "message": "Custom Key"
+  },
+  "tokenError": {
+    "message": "Token Error"
+  },
+  "reconfigure": {
+    "message": "Reconfigure"
+  },
+  "localMode": {
+    "message": "Local Mode"
+  },
+  "githubSetup": {
+    "message": "GitHub Setup"
+  },
+  "connectionError": {
+    "message": "Connection Error"
+  },
+  "localUser": {
+    "message": "Local User"
+  },
+  "githubGistUser": {
+    "message": "GitHub Gist User"
+  },
+  "syncEnabled": {
+    "message": "Sync Enabled"
+  },
+  "userInfoError": {
+    "message": "Error getting user information"
+  },
+  "syncStatusUnavailable": {
+    "message": "Sync status unavailable"
+  },
+  "githubGistSync": {
+    "message": "GitHub Gist Sync"
+  },
+  "settingsPageOpened": {
+    "message": "GitHub Gist settings page opened. Please set up Personal Access Token."
+  },
+  "settingsPageError": {
+    "message": "Cannot open settings page"
+  },
+  "localModeSwitchError": {
+    "message": "Error switching to local mode"
+  },
+  "githubDisconnected": {
+    "message": "GitHub Gist connection disconnected. Using local mode."
+  },
+  "logoutError": {
+    "message": "Error during logout"
+  },
+  "noSavedSessions": {
+    "message": "No saved sessions"
+  },
+  "saveTabsPrompt": {
+    "message": "Open tabs and click \"Save Now\" to try!"
+  },
+  "restore": {
+    "message": "Restore"
+  },
+  "delete": {
+    "message": "Delete"
+  },
+  "sessionRestored": {
+    "message": "Session restored successfully!"
+  },
+  "sessionDeleted": {
+    "message": "Session deleted successfully!"
+  },
+  "sessionRestoreError": {
+    "message": "Error restoring session"
+  },
+  "sessionDeleteError": {
+    "message": "Error deleting session"
+  },
+  "confirmDeleteAll": {
+    "message": "Are you sure you want to delete all sessions?"
+  },
+  "confirmDeleteSelected": {
+    "message": "Are you sure you want to delete selected sessions?"
+  },
+  "allSessionsDeleted": {
+    "message": "All sessions deleted successfully!"
+  },
+  "selectedSessionsDeleted": {
+    "message": "Selected sessions deleted successfully!"
+  },
+  "noSessionsSelected": {
+    "message": "No sessions selected"
+  },
+  "localModeMessage": {
+    "message": "Using local mode. Not synced with other computers."
+  },
+  "noTabsSelected": {
+    "message": "No tabs selected"
+  },
+  "tabsRestored": {
+    "message": "$1 tabs restored successfully!"
+  },
+  "tabsSaved": {
+    "message": "Tabs saved successfully!"
+  },
+  "tabsSaveError": {
+    "message": "Failed to save tabs"
+  },
+  "tabsSaveProcessingError": {
+    "message": "Error while saving tabs"
+  },
+  "justNow": {
+    "message": "Just now"
+  },
+  "minutesAgo": {
+    "message": "$1 minutes ago"
+  },
+  "hoursAgo": {
+    "message": "$1 hours ago"
+  },
+  "daysAgo": {
+    "message": "$1 days ago"
+  },
+  "enterGitHubToken": {
+    "message": "Please enter GitHub Personal Access Token."
+  },
+  "invalidGitHubTokenFormat": {
+    "message": "Invalid GitHub Personal Access Token format. (Must start with ghp_)"
+  },
+  "githubTokenSaved": {
+    "message": "GitHub Token saved successfully."
+  },
+  "githubTokenSaveError": {
+    "message": "Error saving token."
+  },
+  "testingGitHubConnection": {
+    "message": "Testing GitHub connection..."
+  },
+  "githubConnectionSuccess": {
+    "message": "GitHub connection successful! User: $1 ($2)"
+  },
+  "githubTokenInvalid": {
+    "message": "GitHub Token is invalid. Please check your token."
+  },
+  "githubConnectionFailed": {
+    "message": "GitHub connection failed: $1 $2"
+  },
+  "githubConnectionTestError": {
+    "message": "Error testing GitHub connection."
+  },
+  "settingsSaved": {
+    "message": "Settings saved successfully!"
+  },
+  "autoSaveEnabledMessage": {
+    "message": "Auto save enabled with $1 minute interval."
+  },
+  "autoSaveDisabledMessage": {
+    "message": "Auto save disabled. Use \"Save Now\" button manually."
+  },
+  "settingsSaveError": {
+    "message": "Error saving settings."
+  },
+  "enterEncryptionKey": {
+    "message": "Please enter encryption key."
+  },
+  "encryptionKeyTooShort": {
+    "message": "Encryption key must be at least 8 characters long."
+  },
+  "encryptionKeySaved": {
+    "message": "Encryption key saved successfully."
+  },
+  "encryptionKeySaveError": {
+    "message": "Error saving encryption key."
+  },
+  "encryptionKeyReset": {
+    "message": "Encryption key reset to default."
+  },
+  "encryptionKeyResetError": {
+    "message": "Error resetting encryption key."
+  },
+  "confirmResetEncryptionKey": {
+    "message": "Are you sure you want to reset the encryption key to default (GitHub Token)?\n\nWarning: Existing encrypted data will become undecryptable."
+  },
+  "noName": {
+    "message": "No name"
+  }
+} 

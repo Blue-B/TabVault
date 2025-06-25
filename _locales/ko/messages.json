@@ -1,0 +1,380 @@
+{
+  "appName": {
+    "message": "TabVault - 보안 탭 관리자"
+  },
+  "appDescription": {
+    "message": "브라우저 세션을 자동으로 저장하고 복원하며 크로스 디바이스 동기화를 제공합니다. GitHub Gist 동기화로 안전하고 암호화된 저장소를 제공합니다."
+  },
+  "subtitle": {
+    "message": "탭 복원기"
+  },
+  "checking": {
+    "message": "확인 중..."
+  },
+  "settings": {
+    "message": "설정"
+  },
+  "logout": {
+    "message": "로그아웃"
+  },
+  "currentStatus": {
+    "message": "현재 상태"
+  },
+  "openTabs": {
+    "message": "열린 탭"
+  },
+  "openWindows": {
+    "message": "열린 창"
+  },
+  "lastSaved": {
+    "message": "마지막 저장"
+  },
+  "none": {
+    "message": "없음"
+  },
+  "manualSave": {
+    "message": "수동 저장"
+  },
+  "saveAllOpenTabs": {
+    "message": "지금 열린 모든 탭을 저장합니다"
+  },
+  "saveNow": {
+    "message": "지금 저장하기"
+  },
+  "checkAutoSave": {
+    "message": "자동저장 확인"
+  },
+  "savedSessions": {
+    "message": "저장된 세션"
+  },
+  "selectAll": {
+    "message": "전체 선택"
+  },
+  "deleteSelected": {
+    "message": "선택 삭제"
+  },
+  "deleteAll": {
+    "message": "전체 삭제"
+  },
+  "loading": {
+    "message": "로딩 중..."
+  },
+  "close": {
+    "message": "닫기"
+  },
+  "sessionDetails": {
+    "message": "세션 상세 정보"
+  },
+  "savedAt": {
+    "message": "저장 시점"
+  },
+  "totalTabs": {
+    "message": "총 탭 수"
+  },
+  "totalWindows": {
+    "message": "총 창 수"
+  },
+  "restoreSelected": {
+    "message": "선택 복원"
+  },
+  "restoreSession": {
+    "message": "전체 복원"
+  },
+  "deleteSession": {
+    "message": "삭제"
+  },
+  "tabFiltering": {
+    "message": "탭 필터링"
+  },
+  "searchByUrlOrTitle": {
+    "message": "URL 또는 제목으로 검색..."
+  },
+  "processing": {
+    "message": "처리 중..."
+  },
+  "autoSaveSettings": {
+    "message": "자동 저장 설정"
+  },
+  "autoSaveInterval": {
+    "message": "자동 저장 간격:"
+  },
+  "enableAutoSave": {
+    "message": "자동 저장 활성화"
+  },
+  "minute": {
+    "message": "분"
+  },
+  "minutes": {
+    "message": "분"
+  },
+  "hour": {
+    "message": "시간"
+  },
+  "githubGistSettings": {
+    "message": "GitHub Gist 설정"
+  },
+  "githubTokenSetup": {
+    "message": "GitHub Personal Access Token 설정"
+  },
+  "githubTokenDescription": {
+    "message": "다른 컴퓨터에서도 탭을 복원하려면 GitHub Gist를 설정하세요."
+  },
+  "tokenCreationSteps": {
+    "message": "Token 생성 방법:"
+  },
+  "githubToken": {
+    "message": "GitHub Personal Access Token:"
+  },
+  "saveToken": {
+    "message": "토큰 저장"
+  },
+  "testConnection": {
+    "message": "연결 테스트"
+  },
+  "storageLocation": {
+    "message": "저장 위치"
+  },
+  "localStorage": {
+    "message": "로컬 저장"
+  },
+  "sync": {
+    "message": "동기화"
+  },
+  "encryption": {
+    "message": "암호화"
+  },
+  "githubGistStatus": {
+    "message": "GitHub Gist 상태"
+  },
+  "checkingConnection": {
+    "message": "GitHub Gist 연결 상태를 확인 중..."
+  },
+  "encryptionSettings": {
+    "message": "암호화 설정"
+  },
+  "dataEncryption": {
+    "message": "데이터 암호화"
+  },
+  "encryptionDescription": {
+    "message": "GitHub Gist에 저장되는 데이터는 자동으로 암호화됩니다."
+  },
+  "encryptionMethod": {
+    "message": "암호화 방식:"
+  },
+  "customEncryptionKey": {
+    "message": "사용자 정의 암호화 키 (선택사항):"
+  },
+  "saveEncryptionKey": {
+    "message": "암호화 키 저장"
+  },
+  "resetToDefault": {
+    "message": "기본값으로 재설정"
+  },
+  "saveSettings": {
+    "message": "설정 저장"
+  },
+  "language": {
+    "message": "언어"
+  },
+  "english": {
+    "message": "English"
+  },
+  "korean": {
+    "message": "한국어"
+  },
+  "initializationError": {
+    "message": "초기화 중 오류가 발생했습니다"
+  },
+  "autoSaveEnabled": {
+    "message": "자동 저장 활성화됨 ($1분 간격) - 재시작 완료"
+  },
+  "autoSaveDisabled": {
+    "message": "자동 저장이 비활성화되어 있습니다"
+  },
+  "autoSaveCheckError": {
+    "message": "자동 저장 상태 확인 중 오류가 발생했습니다"
+  },
+  "customKey": {
+    "message": "사용자 정의 키"
+  },
+  "tokenError": {
+    "message": "토큰 오류"
+  },
+  "reconfigure": {
+    "message": "재설정"
+  },
+  "localMode": {
+    "message": "로컬 모드"
+  },
+  "githubSetup": {
+    "message": "GitHub 설정"
+  },
+  "connectionError": {
+    "message": "연결 오류"
+  },
+  "localUser": {
+    "message": "로컬 사용자"
+  },
+  "githubGistUser": {
+    "message": "GitHub Gist 사용자"
+  },
+  "syncEnabled": {
+    "message": "동기화 활성화됨"
+  },
+  "userInfoError": {
+    "message": "사용자 정보 가져오기 오류"
+  },
+  "syncStatusUnavailable": {
+    "message": "동기화 상태 확인 불가"
+  },
+  "githubGistSync": {
+    "message": "GitHub Gist 동기화"
+  },
+  "settingsPageOpened": {
+    "message": "GitHub Gist 설정 페이지가 열렸습니다. Personal Access Token을 설정해주세요."
+  },
+  "settingsPageError": {
+    "message": "설정 페이지를 열 수 없습니다"
+  },
+  "localModeSwitchError": {
+    "message": "로컬 모드 전환 오류"
+  },
+  "githubDisconnected": {
+    "message": "GitHub Gist 연결이 해제되었습니다. 로컬 모드로 사용합니다."
+  },
+  "logoutError": {
+    "message": "로그아웃 중 오류가 발생했습니다"
+  },
+  "noSavedSessions": {
+    "message": "저장된 세션이 없습니다"
+  },
+  "saveTabsPrompt": {
+    "message": "탭을 열고 \"지금 저장하기\"를 눌러보세요!"
+  },
+  "restore": {
+    "message": "복원"
+  },
+  "delete": {
+    "message": "삭제"
+  },
+  "sessionRestored": {
+    "message": "세션이 성공적으로 복원되었습니다!"
+  },
+  "sessionDeleted": {
+    "message": "세션이 성공적으로 삭제되었습니다!"
+  },
+  "sessionRestoreError": {
+    "message": "세션 복원 중 오류가 발생했습니다"
+  },
+  "sessionDeleteError": {
+    "message": "세션 삭제 중 오류가 발생했습니다"
+  },
+  "confirmDeleteAll": {
+    "message": "모든 세션을 삭제하시겠습니까?"
+  },
+  "confirmDeleteSelected": {
+    "message": "선택한 세션들을 삭제하시겠습니까?"
+  },
+  "allSessionsDeleted": {
+    "message": "모든 세션이 성공적으로 삭제되었습니다!"
+  },
+  "selectedSessionsDeleted": {
+    "message": "선택한 세션들이 성공적으로 삭제되었습니다!"
+  },
+  "noSessionsSelected": {
+    "message": "선택된 세션이 없습니다"
+  },
+  "localModeMessage": {
+    "message": "로컬 모드로 사용합니다. 다른 컴퓨터와 동기화되지 않습니다."
+  },
+  "noTabsSelected": {
+    "message": "선택된 탭이 없습니다"
+  },
+  "tabsRestored": {
+    "message": "$1개 탭이 복원되었습니다!"
+  },
+  "tabsSaved": {
+    "message": "탭이 성공적으로 저장되었습니다!"
+  },
+  "tabsSaveError": {
+    "message": "탭 저장에 실패했습니다"
+  },
+  "tabsSaveProcessingError": {
+    "message": "탭 저장 중 오류가 발생했습니다"
+  },
+  "justNow": {
+    "message": "방금 전"
+  },
+  "minutesAgo": {
+    "message": "$1분 전"
+  },
+  "hoursAgo": {
+    "message": "$1시간 전"
+  },
+  "daysAgo": {
+    "message": "$1일 전"
+  },
+  "enterGitHubToken": {
+    "message": "GitHub Personal Access Token을 입력해주세요."
+  },
+  "invalidGitHubTokenFormat": {
+    "message": "올바른 GitHub Personal Access Token 형식이 아닙니다. (ghp_로 시작해야 함)"
+  },
+  "githubTokenSaved": {
+    "message": "GitHub Token이 성공적으로 저장되었습니다."
+  },
+  "githubTokenSaveError": {
+    "message": "Token 저장 중 오류가 발생했습니다."
+  },
+  "testingGitHubConnection": {
+    "message": "GitHub 연결을 테스트하고 있습니다..."
+  },
+  "githubConnectionSuccess": {
+    "message": "GitHub 연결 성공! 사용자: $1 ($2)"
+  },
+  "githubTokenInvalid": {
+    "message": "GitHub Token이 유효하지 않습니다. Token을 다시 확인해주세요."
+  },
+  "githubConnectionFailed": {
+    "message": "GitHub 연결 실패: $1 $2"
+  },
+  "githubConnectionTestError": {
+    "message": "GitHub 연결 테스트 중 오류가 발생했습니다."
+  },
+  "settingsSaved": {
+    "message": "설정이 성공적으로 저장되었습니다!"
+  },
+  "autoSaveEnabledMessage": {
+    "message": "자동 저장이 $1분 간격으로 활성화되었습니다."
+  },
+  "autoSaveDisabledMessage": {
+    "message": "자동 저장이 비활성화되었습니다. 수동으로 \"저장하기\" 버튼을 사용하세요."
+  },
+  "settingsSaveError": {
+    "message": "설정 저장 중 오류가 발생했습니다."
+  },
+  "enterEncryptionKey": {
+    "message": "암호화 키를 입력해주세요."
+  },
+  "encryptionKeyTooShort": {
+    "message": "암호화 키는 최소 8자 이상이어야 합니다."
+  },
+  "encryptionKeySaved": {
+    "message": "암호화 키가 성공적으로 저장되었습니다."
+  },
+  "encryptionKeySaveError": {
+    "message": "암호화 키 저장 중 오류가 발생했습니다."
+  },
+  "encryptionKeyReset": {
+    "message": "암호화 키가 기본값으로 재설정되었습니다."
+  },
+  "encryptionKeyResetError": {
+    "message": "암호화 키 재설정 중 오류가 발생했습니다."
+  },
+  "confirmResetEncryptionKey": {
+    "message": "암호화 키를 기본값(GitHub Token)으로 재설정하시겠습니까?\n\n주의: 기존 암호화된 데이터는 복호화할 수 없게 됩니다."
+  },
+  "noName": {
+    "message": "이름 없음"
+  }
+} 

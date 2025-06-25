@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TabVault</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 헤더 -->
+        <div class="header">
+            <h1>TabVault</h1>
+            <p class="subtitle" data-i18n="subtitle">Tab Restorer</p>
+        </div>
+
+        <!-- 언어 선택기 -->
+        <div id="languageSelector" class="language-selector-container"></div>
+
+        <!-- 간단한 상태 표시 -->
+        <div id="statusBar" class="status-bar">
+            <div id="userStatus" class="user-status">
+                <span id="statusIcon">●</span>
+                <span id="statusText" data-i18n="checking">Checking...</span>
+            </div>
+            <div class="status-actions">
+                <button id="settingsBtn" class="btn btn-small" style="display: none;" data-i18n="settings">Settings</button>
+                <button id="logoutBtn" class="btn btn-small btn-secondary" style="display: none;" data-i18n="logout">Logout</button>
+            </div>
+        </div>
+
+        <!-- 메인 기능 -->
+        <div id="mainFeatures" class="main-features">
+            <!-- 현재 상태 -->
+            <div class="status-card">
+                <h3 data-i18n="currentStatus">Current Status</h3>
+                <div class="status-info">
+                    <p><span data-i18n="openTabs">Open Tabs</span>: <span id="currentTabCount">0</span></p>
+                    <p><span data-i18n="openWindows">Open Windows</span>: <span id="currentWindowCount">0</span></p>
+                    <p><span data-i18n="lastSaved">Last Saved</span>: <span id="lastSaved" data-i18n="none">None</span></p>
+                </div>
+            </div>
+
+            <!-- 수동 저장 -->
+            <div class="action-card">
+                <h3 data-i18n="manualSave">Manual Save</h3>
+                <p data-i18n="saveAllOpenTabs">Save all currently open tabs</p>
+                <div class="action-buttons">
+                    <button id="saveNowBtn" class="btn btn-primary" data-i18n="saveNow" data-i18n-title="saveNow">
+                        Save Now
+                    </button>
+                    <button id="checkAutoSaveBtn" class="btn btn-secondary" data-i18n="checkAutoSave" data-i18n-title="checkAutoSave">
+                        Check Auto Save
+                    </button>
+                </div>
+            </div>
+
+            <!-- 저장된 세션 -->
+            <div class="sessions-card">
+                <div class="sessions-header">
+                    <h3 data-i18n="savedSessions">Saved Sessions</h3>
+                </div>
+                <div class="sessions-actions">
+                    <button id="selectAllBtn" class="btn btn-small btn-secondary" data-i18n="selectAll">Select All</button>
+                    <button id="deleteSelectedBtn" class="btn btn-small btn-danger" data-i18n="deleteSelected">Delete Selected</button>
+                    <button id="deleteAllBtn" class="btn btn-small btn-danger" data-i18n="deleteAll">Delete All</button>
+                </div>
+                <div id="sessionsList" class="sessions-list">
+                    <p class="loading" data-i18n="loading">Loading...</p>
+                </div>
+            </div>
+
+            <!-- 세션 상세 보기 (슬라이드 형태) -->
+            <div id="sessionDetail" class="session-detail-slide" style="display: none;">
+                <div class="detail-header">
+                    <button id="backToList" class="btn btn-small btn-secondary" data-i18n="close">Close</button>
+                    <h3 id="detailTitle" data-i18n="sessionDetails">Session Details</h3>
+                </div>
+                <div class="detail-content">
+                    <div class="detail-info">
+                        <p><strong data-i18n="savedAt">Saved at</strong>: <span id="detailTime"></span></p>
+                        <p><strong data-i18n="totalTabs">Total Tabs</strong>: <span id="detailTabCount"></span></p>
+                        <p><strong data-i18n="totalWindows">Total Windows</strong>: <span id="detailWindowCount"></span></p>
+                    </div>
+                    
+                    <!-- 액션 버튼을 상단으로 이동 -->
+                    <div class="detail-actions">
+                        <button id="restoreSelected" class="btn btn-primary" data-i18n="restoreSelected">Restore Selected</button>
+                        <button id="restoreSession" class="btn btn-success" data-i18n="restoreSession">Restore Session</button>
+                        <button id="deleteSession" class="btn btn-danger" data-i18n="deleteSession">Delete</button>
+                    </div>
+                    
+                    <div class="url-filter">
+                        <h4 data-i18n="tabFiltering">Tab Filtering</h4>
+                        <div class="filter-controls">
+                            <input type="text" id="filterInput" class="filter-input" data-i18n="searchByUrlOrTitle" placeholder="Search by URL or title...">
+                        </div>
+                    </div>
+                    <div id="windowTabsList" class="window-tabs-list">
+                        <div class="tab-select-all-row">
+                            <label><input type="checkbox" id="tabSelectAll"> <span data-i18n="selectAll">Select All</span></label>
+                        </div>
+                        <!-- 탭 목록이 동적으로 생성됩니다 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 로딩 스피너 -->
+        <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+            <div class="spinner"></div>
+            <p data-i18n="processing">Processing...</p>
+        </div>
+
+        <!-- 알림 메시지 -->
+        <div id="notification" class="notification" style="display: none;">
+            <span id="notificationText"></span>
+        </div>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html> 

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TabVault - Settings</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 data-i18n="appName">TabVault Settings</h1>
+            <p data-i18n="appDescription">Manage TabVault settings</p>
+        </header>
+
+        <!-- 언어 선택기 -->
+        <div id="languageSelector" class="language-selector-container"></div>
+
+        <main class="main-content">
+            <!-- 자동 저장 설정 -->
+            <section class="settings-section">
+                <h2 data-i18n="autoSaveSettings">Auto Save Settings</h2>
+                <div class="setting-item">
+                    <label for="autoSaveInterval" data-i18n="autoSaveInterval">Auto Save Interval:</label>
+                    <select id="autoSaveInterval">
+                        <option value="1">1 <span data-i18n="minute">minute</span></option>
+                        <option value="5" selected>5 <span data-i18n="minutes">minutes</span></option>
+                        <option value="10">10 <span data-i18n="minutes">minutes</span></option>
+                        <option value="15">15 <span data-i18n="minutes">minutes</span></option>
+                        <option value="30">30 <span data-i18n="minutes">minutes</span></option>
+                        <option value="60">1 <span data-i18n="hour">hour</span></option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="enableAutoSave">
+                        <span data-i18n="enableAutoSave">Enable Auto Save</span>
+                    </label>
+                </div>
+            </section>
+
+            <!-- GitHub Gist 설정 -->
+            <section class="settings-section">
+                <h2 data-i18n="githubGistSettings">GitHub Gist Settings</h2>
+                
+                <div class="info-box">
+                    <h3 data-i18n="githubTokenSetup">GitHub Personal Access Token Setup</h3>
+                    <p data-i18n="githubTokenDescription">To restore tabs on other computers, set up GitHub Gist.</p>
+                    
+                    <div style="margin: 16px 0;">
+                        <strong data-i18n="tokenCreationSteps">Token Creation Steps:</strong>
+                        <ol style="margin: 12px 0; padding-left: 24px; color: #64748b; line-height: 1.6;">
+                            <li>Log in to GitHub.com</li>
+                            <li>Settings → Developer settings → Personal access tokens → Tokens (classic)</li>
+                            <li>Click "Generate new token"</li>
+                            <li>Note: Enter "TabVault"</li>
+                            <li>Expiration: Select "No expiration"</li>
+                            <li>Scopes: Check "gist"</li>
+                            <li>Click "Generate token"</li>
+                            <li>Copy the generated token and enter it below</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="githubToken" data-i18n="githubToken">GitHub Personal Access Token:</label>
+                    <input type="password" id="githubToken" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
+                    <div class="input-help">
+                        Enter the Personal Access Token generated from GitHub. <strong>gist</strong> permission is required.
+                    </div>
+                </div>
+                
+                <!-- GitHub Token 상태 메시지 -->
+                <div id="githubTokenStatus" class="status" style="display: none; margin-bottom: 16px;"></div>
+                
+                <div class="button-group">
+                    <button id="saveToken" class="btn btn-primary" data-i18n="saveToken">Save Token</button>
+                    <button id="testToken" class="btn btn-secondary" data-i18n="testConnection">Test Connection</button>
+                </div>
+                
+                <div class="save-location-info">
+                    <h4 data-i18n="storageLocation">Storage Location</h4>
+                    <ul>
+                        <li><strong data-i18n="localStorage">Local Storage:</strong> Chrome browser internal storage (chrome.storage.local)</li>
+                        <li><strong data-i18n="sync">Sync:</strong> GitHub Gist (gist.github.com)</li>
+                        <li><strong data-i18n="encryption">Encryption:</strong> Automatically encrypted with AES-GCM 256-bit</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- GitHub Gist 상태 -->
+            <section class="settings-section">
+                <h2 data-i18n="githubGistStatus">GitHub Gist Status</h2>
+                <div id="accountInfo" class="account-info">
+                    <div id="githubStatus">
+                        <p data-i18n="checkingConnection">Checking GitHub Gist connection...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 암호화 설정 -->
+            <section class="settings-section">
+                <h2 data-i18n="encryptionSettings">Encryption Settings</h2>
+                
+                <div class="info-box">
+                    <h3 data-i18n="dataEncryption">Data Encryption</h3>
+                    <p data-i18n="encryptionDescription">Data stored in GitHub Gist is automatically encrypted.</p>
+                    
+                    <div style="margin: 16px 0;">
+                        <strong data-i18n="encryptionMethod">Encryption Method:</strong>
+                        <ul style="margin: 12px 0; padding-left: 24px; color: #64748b; line-height: 1.6;">
+                            <li>AES-GCM 256-bit encryption</li>
+                            <li>Default key: GitHub Personal Access Token</li>
+                            <li>Custom key setting available</li>
+                            <li>Enhanced security so others cannot see</li>
+                        </ul>
+                    </div>
+                    
+                    <p style="margin-top: 16px; padding: 12px; background: #fef3c7; border: 1px solid #f59e0b; border-radius: 6px; color: #92400e;">
+                        <strong>Warning:</strong> Changing the encryption key will make existing data undecryptable.
+                    </p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="encryptionKey" data-i18n="customEncryptionKey">Custom Encryption Key (Optional):</label>
+                    <input type="password" id="encryptionKey" placeholder="Default: Uses GitHub Token">
+                    <div class="input-help">
+                        Leave blank to use GitHub Token as encryption key. <strong>32 characters or more</strong> recommended.
+                    </div>
+                </div>
+                
+                <!-- 암호화 키 상태 메시지 -->
+                <div id="encryptionKeyStatus" class="status" style="display: none; margin-bottom: 16px;"></div>
+                
+                <div class="button-group">
+                    <button id="saveEncryptionKey" class="btn btn-primary" data-i18n="saveEncryptionKey">Save Encryption Key</button>
+                    <button id="resetEncryptionKey" class="btn btn-secondary" data-i18n="resetToDefault">Reset to Default</button>
+                </div>
+                
+                <div class="save-location-info">
+                    <h4 data-i18n="storageLocation">Encryption Key Storage Location</h4>
+                    <ul>
+                        <li><strong data-i18n="localStorage">Local Storage:</strong> Chrome browser internal storage (chrome.storage.local)</li>
+                        <li><strong data-i18n="sync">Sync:</strong> Not synced with other devices (for security)</li>
+                        <li><strong>Backup:</strong> Manually backup the key to a safe location</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <!-- 저장 버튼 -->
+        <footer class="footer">
+            <div class="save-location-info">
+                <h4 data-i18n="storageLocation">Settings Storage Location</h4>
+                <ul>
+                    <li><strong data-i18n="autoSaveSettings">Auto Save Settings:</strong> Chrome browser internal storage</li>
+                    <li><strong>GitHub Token:</strong> Chrome browser internal storage (encrypted)</li>
+                    <li><strong>Encryption Key:</strong> Chrome browser internal storage (encrypted)</li>
+                    <li><strong>Tab Data:</strong> GitHub Gist (stored encrypted)</li>
+                </ul>
+            </div>
+            
+            <!-- 설정 저장 상태 메시지 -->
+            <div id="saveSettingsStatus" class="status" style="display: none; margin-bottom: 16px;"></div>
+            
+            <!-- 설정 저장 버튼 -->
+            <div style="text-align: center; margin-top: 20px;">
+                <button id="saveSettings" class="btn btn-primary" data-i18n="saveSettings" style="font-size: 16px; padding: 12px 24px; min-width: 200px;">
+                    Save Settings
+                </button>
+            </div>
+        </footer>
+
+        <!-- 알림 메시지 -->
+        <div id="notification" class="notification" style="display: none;">
+            <span id="notificationText"></span>
+        </div>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="options.js"></script>
+</body>
+</html> 
