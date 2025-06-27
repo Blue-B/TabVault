@@ -66,6 +66,7 @@ TabVault automatically saves your browser sessions at configurable intervals, al
 ## Installation
 
 ### From Chrome Web Store
+[Chrome Web store TabVault](https://chromewebstore.google.com/detail/tabvault-%EB%B3%B4%EC%95%88-%ED%83%AD-%EA%B4%80%EB%A6%AC%EC%9E%90/idilkfhikhppjciebljbfeejidkfalmd?authuser=0&hl=ko&pli=1)
 1. Visit the Chrome Web Store
 2. Search for "TabVault"
 3. Click "Add to Chrome"
