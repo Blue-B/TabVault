@@ -66,6 +66,7 @@ TabVaultは設定可能な間隔でブラウザセッションを自動保存し
 ## インストール方法
 
 ### Chrome Web Storeから
+[Chrome Web store TabVault](https://chromewebstore.google.com/detail/tabvault-%EB%B3%B4%EC%95%88-%ED%83%AD-%EA%B4%80%EB%A6%AC%EC%9E%90/idilkfhikhppjciebljbfeejidkfalmd?authuser=0&hl=ko&pli=1)
 1. Chrome Web Storeにアクセス
 2. "TabVault"を検索
 3. "Chromeに追加"をクリック
