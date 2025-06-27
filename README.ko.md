@@ -66,6 +66,7 @@ TabVault는 설정 가능한 간격으로 브라우저 세션을 자동 저장�
 ## 설치 방법
 
 ### Chrome 웹 스토어에서
+[Chrome Web store TabVault](https://chromewebstore.google.com/detail/tabvault-%EB%B3%B4%EC%95%88-%ED%83%AD-%EA%B4%80%EB%A6%AC%EC%9E%90/idilkfhikhppjciebljbfeejidkfalmd?authuser=0&hl=ko&pli=1)
 1. Chrome 웹 스토어 방문
 2. "TabVault" 검색
 3. "Chrome에 추가" 클릭
