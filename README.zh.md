@@ -66,6 +66,7 @@ TabVault以可配置的间隔自动保存您的浏览器会话，允许您稍后
 ## 安装方法
 
 ### 从Chrome Web Store
+[Chrome Web store TabVault](https://chromewebstore.google.com/detail/tabvault-%EB%B3%B4%EC%95%88-%ED%83%AD-%EA%B4%80%EB%A6%AC%EC%9E%90/idilkfhikhppjciebljbfeejidkfalmd?authuser=0&hl=ko&pli=1)
 1. 访问Chrome Web Store
 2. 搜索"TabVault"
 3. 点击"添加到Chrome"
