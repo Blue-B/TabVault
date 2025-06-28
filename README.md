@@ -15,7 +15,7 @@ A powerful Chrome extension for automatically saving and restoring browser sessi
 **TabVault** - Where your tabs are safely stored and synchronized across devices. The name combines "Tab" (browser tabs) with "Vault" (secure storage), representing our commitment to keeping your browsing sessions secure and accessible anywhere.
 
 ## Overview
-![2025-06-26 00 09 32](https://github.com/user-attachments/assets/adabf6bd-e25a-4787-9a01-7154a9836e5b)
+![Frame](https://github.com/user-attachments/assets/c695baaa-0a59-4645-9909-84300b931ef8)
 
 TabVault automatically saves your browser sessions at configurable intervals, allowing you to restore them later across different devices. The extension uses GitHub Gist for cloud synchronization with end-to-end encryption, ensuring your data remains private and secure.
 
