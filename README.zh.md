@@ -15,7 +15,7 @@
 **TabVault** - 标签页安全存储和跨设备同步的地方。名称结合了"Tab"（浏览器标签页）和"Vault"（安全存储），代表我们致力于保持您的浏览会话安全且可在任何地方访问的承诺。
 
 ## 概述
-![2025-06-26 00 09 32](https://github.com/user-attachments/assets/7b2b5de1-f5b9-4ff5-b05d-8a253936852f)
+![Frame](https://github.com/user-attachments/assets/cdfc7b4a-3a77-4237-b3e9-8a0bbd0478bf)
 
 TabVault以可配置的间隔自动保存您的浏览器会话，允许您稍后在不同设备上恢复它们。扩展程序使用GitHub Gist进行云同步，具有端到端加密，确保您的数据保持私密和安全。
 
