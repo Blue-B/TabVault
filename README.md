@@ -17,6 +17,8 @@ A powerful Chrome extension for automatically saving and restoring browser sessi
 ## Overview
 ![Frame](https://github.com/user-attachments/assets/c695baaa-0a59-4645-9909-84300b931ef8)
 
+[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub-blue?logo=github-sponsors)](https://github.com/sponsors/본인아이디)
+
 TabVault automatically saves your browser sessions at configurable intervals, allowing you to restore them later across different devices. The extension uses GitHub Gist for cloud synchronization with end-to-end encryption, ensuring your data remains private and secure.
 
 **Smart Auto-Save** automatically saves your browser sessions every 5 minutes by default, but you can adjust this interval from 1 to 60 minutes. **Manual Save** lets you instantly save your current session with one click or using the Ctrl+S keyboard shortcut.
